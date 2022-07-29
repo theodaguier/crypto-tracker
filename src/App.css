@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin-top: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  font-family: Sora;
+  font-size: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
+  background-color: black;
+  color: white;
+}
+
+.title {
+  font-size: clamp(1.95rem, 1.56vw + 1.56rem, 2.81rem);
+  font-weight: 600;
+}
+
+.search-bar {
+  text-align: right;
+}/*# sourceMappingURL=App.css.map */
