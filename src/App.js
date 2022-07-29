@@ -2,6 +2,9 @@ import React, {useState, useEffect} from 'react';
 import './App.css';
 import axios from 'axios';
 import CoinData from './components/CoinData'
+import './components/CoinData.css'
+import {Routes, Route} from 'react-router-dom'
+import NavBar from './components/NavBar'
 
 function App() {
 
@@ -18,9 +21,6 @@ function App() {
     }).catch(error =>  console.log(error))
   }, []);
 
-  const handleChange = e => {
-    setSearch(e.target.value)
-  }
 
   // Search Filter
 
@@ -29,17 +29,7 @@ function App() {
 
   return (
     <div className="App">
-      <div className="title">Crypto Tracker</div>
-      <div className="search-bar">
-        <form>
-          <input 
-          type="text" 
-          placeholder='Search' 
-          className="search-input" 
-          onChange={handleChange}
-          />
-        </form>
-      </div>
+      <NavBar />
       {filteredCoins.map(coin => {
         return (
           <CoinData 
@@ -47,8 +37,10 @@ function App() {
           name={coin.name} 
           image={coin.image}
           symbol={coin.symbol}
-          volume={coin.market_cap}
+          marketcap={coin.market_cap}
           price={coin.current_price}
+          priceChange={coin.price_change_percentage_24h}
+          volume={coin.total_volume}
           />
         )
       })}

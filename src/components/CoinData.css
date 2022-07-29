@@ -1,0 +1,51 @@
+.coin-data-container {
+  width: 100%;
+  border-bottom: solid 1px;
+  text-align: left;
+}
+.coin-data-container .row {
+  display: flex;
+  align-items: center;
+  height: 10vh;
+}
+.coin-data-container .row .coin-data {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.coin-data-container .row .coin-data p {
+  width: 100%;
+}
+
+.coin {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.coin .coin-name {
+  margin-left: 50px;
+}
+.coin img {
+  width: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.coin h1 {
+  width: 100%;
+}
+.coin .symbol {
+  font-weight: 100;
+}
+
+.coin-percent .red {
+  color: red;
+}
+
+.coin-percent .green {
+  color: green;
+}/*# sourceMappingURL=CoinData.css.map */

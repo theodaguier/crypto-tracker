@@ -9,13 +9,18 @@ body {
   margin-left: 2rem;
   margin-right: 2rem;
   font-family: Sora;
-  font-size: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
+  font-size: clamp(0.8rem, 0.17vw + 0.76rem, 0.89rem);
+  font-weight: 200;
   background-color: black;
   color: white;
 }
 
+h1 {
+  font-size: clamp(0.8rem, 0.17vw + 0.76rem, 0.89rem);
+}
+
 .title {
-  font-size: clamp(1.95rem, 1.56vw + 1.56rem, 2.81rem);
+  font-size: clamp(2.44rem, 2.38vw + 1.85rem, 3.75rem);
   font-weight: 600;
 }
 

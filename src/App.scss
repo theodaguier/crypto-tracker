@@ -21,16 +21,22 @@ body {
     margin-left: 2rem;
     margin-right: 2rem;
     font-family: Sora;
-    font-size: $font-size-base;
+    font-size: $font-size-sm;
+    font-weight: 200;
     background-color: black;
     color: white;
 }
 
+h1 {
+    font-size: $font-size-sm;;
+}
+
 .title {
-    font-size: $font-size-xl;
+    font-size: $font-size-xxl;
     font-weight: 600;
 }
 
 .search-bar {
     text-align: right;
 }
+
