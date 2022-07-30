@@ -1,23 +1,12 @@
 import React, {useRef} from 'react'
 
-const CoinData = ({ name, image, symbol, price, volume, priceChange, marketcap }) => {
+const CoinData = ({ name, image, symbol, price, volume, priceChange, marketcap, marketcaprank }) => {
 
   const ref = useRef(null);
-  const container = document.querySelector('.coin-data-container')
-
-    const handleClick = event => {
-      if (event.currentTarget.classList.contains('noactive')) {
-        container.classList.add('active');
-        container.classList.remove('noactive');
-      } else {
-        container.classList.remove('active');
-        container.classList.add('noactive');
-      }
-    };
-
+  
   return (
     <div>
-        <div className="coin-data-container noactive" onClick={handleClick}>
+        <div className="coin-data-container noactive">
           <div className="row">
             <div className="coin">
               <img src={image} alt="crypto-img" />
@@ -34,7 +23,7 @@ const CoinData = ({ name, image, symbol, price, volume, priceChange, marketcap }
                 <p className="coin-percent red">{priceChange.toFixed(2)}%</p>
               ) : (<p className="coin-percent green">{priceChange.toFixed(2)}%</p>
               )}
-            <p className="marketcap">Mkt Cap: ${marketcap.toLocaleString()}</p>
+            <p className="marketcap">${marketcap.toLocaleString()}</p>
 
             <div></div>
 

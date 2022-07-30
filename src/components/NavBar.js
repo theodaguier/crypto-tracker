@@ -8,9 +8,6 @@ const NavBar = () => {
     const [coins, setCoins] = useState([]);
     const [search, setSearch] = useState('');
 
-    const filteredCoins = coins.filter(coin => 
-        coin.name.toLowerCase().includes(search.toLocaleLowerCase()))
-    
   return (
     <div>
         <div className="title">Crypto Tracker</div>
