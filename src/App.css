@@ -13,6 +13,17 @@ body {
   font-weight: 200;
 }
 
+@media screen and (max-width: 650px) {
+  body {
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    font-size: 10px;
+  }
+  .title {
+    margin-bottom: 5vw;
+  }
+}
 .dark {
   background-color: black;
   color: white;
@@ -39,7 +50,12 @@ h1 {
 }
 
 .nav-bar {
-  margin-bottom: 7vw;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: white;
+  height: 18vh;
 }
 
 form {
@@ -52,17 +68,12 @@ form input {
   margin-left: 10px;
   border-radius: 0;
   color: black;
-  border-style: none;
-  border-radius: 2px;
   width: 200px;
   height: 20px;
   font-family: Sora;
-}
-form ::-webkit-input-placeholder {
-  color: black;
-}
-form input[type=text]:focus {
-  outline: none;
+  outline: 0;
+  border-width: 0 0 2px;
+  border-color: black;
 }
 
 .title-items {

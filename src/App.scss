@@ -25,6 +25,21 @@ body {
     font-weight: 200;
 }
 
+// Responsive Mobile
+
+@media screen and (max-width: 650px){
+    body {
+        margin-top: .5rem;
+        margin-left: .5rem;
+        margin-right: .5rem;
+        font-size: 10px;
+    }
+
+    .title {
+        margin-bottom: 5vw;
+    }
+}
+
 // Change Theme
 
     .dark {
@@ -56,7 +71,11 @@ h1 {
 // NavBar
 
 .nav-bar {
-    margin-bottom: 7vw;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: white;
+    height: 18vh;
 }
 
 // Input Style
@@ -70,19 +89,12 @@ form {
         margin-left: 10px;
         border-radius: 0;
         color: black;
-        border-style: none;
-        border-radius: 2px;
         width: 200px;
         height: 20px;
         font-family: Sora;
-    }
-    
-    ::-webkit-input-placeholder {
-        color: black;
-    }
-    
-    input[type=text]:focus{
-        outline: none;
+        outline: 0;
+        border-width: 0 0 2px;
+        border-color: black
     }
 }
 

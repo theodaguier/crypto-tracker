@@ -1,10 +1,8 @@
 import React, {useState, useEffect} from 'react';
-import {Routes, Route} from 'react-router-dom'
 import './App.css';
 import axios from 'axios';
 import CoinData from './components/CoinData'
 import './components/CoinData.css'
-import NavBar from './components/NavBar'
 
 function App() {
 
@@ -24,8 +22,8 @@ function App() {
       container.classList.remove('dark');
       container.classList.add('white');
     } else {
-      container.classList.add('white');
-      container.classList.remove('dark');
+      container.classList.remove('white');
+      container.classList.add('dark');
     }
   };
 
@@ -45,13 +43,12 @@ function App() {
     coin.name.toLowerCase().includes(search.toLocaleLowerCase()))
 
   return (
-    <div className="App dark">
+    <div className="App">
         <div className="nav-bar">
         <div className="title">Crypto Tracker</div>
-        <div className="theme" onClick={handleClick}>Change Theme</div>
           <div className="search-bar">
               <form>
-              <p>Search</p>  
+              <p>Search:</p>  
               <input 
               type="text" 
               className="search-input" 
@@ -60,18 +57,6 @@ function App() {
               </form>
           </div>
       </div>
-        <div className="title-items">
-          <div className="id-coin">
-            <p>Icon</p>
-            <p>Name</p>
-          </div>
-          <div className="tag">
-            <p>Price</p>
-            <p>Volume</p>
-            <p>Price Change</p>
-            <p>Mkt Cap</p>
-          </div>
-        </div>
         {filteredCoins.map(coin => {
           return (
             <>

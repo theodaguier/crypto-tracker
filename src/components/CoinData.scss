@@ -27,7 +27,7 @@
     justify-content: flex-start;
     align-items: center;
     .coin-name {
-        margin-left: 50px;
+        margin-left: 2vw;
     }
     img{
         width: 50px;
@@ -38,6 +38,46 @@
     }
     .symbol {
         font-weight: 100;
+    }
+}
+
+// Responsive Mobile 
+.title-m {
+    width: 100%;
+    height: 100%;
+    font-weight: 500;
+    p {
+        font-weight: 200;
+        letter-spacing: .8px;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .coin {
+        width: 40%;
+    }
+    .coin img {
+        width: 24px;
+        object-fit: cover;
+    }
+    .coin-data {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+    }
+
+    .coin-data-container .row .coin-data {
+        justify-content: space-between;
+    }
+    .title-m {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 50%;
+        height: 50%;
     }
 }
 
