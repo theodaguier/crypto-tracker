@@ -14,20 +14,6 @@ function App() {
     setSearch(e.target.value)
   }
 
-  // Change Theme
-
-  const container = document.querySelector('.App')
-
-  const handleClick = event => {
-    if (event.currentTarget.classList.contains('dark')) {
-      container.classList.remove('dark');
-      container.classList.add('white');
-    } else {
-      container.classList.remove('white');
-      container.classList.add('dark');
-    }
-  };
-
   // Call API 
 
   useEffect(() => {
