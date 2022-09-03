@@ -1,6 +1,6 @@
 # Crypto Tracker
 
-Application permettant de suivre vraie la progression de cryptomonnaie actualisée en temps réel
+Application pour suivre la progression des cryptomonnaies actualisée en temps réel.
 
 Link: https://theodaguier.github.io/crypto-tracker/
 
